@@ -11,10 +11,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- google font -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/slicknav.css">
         <!-- <link rel="stylesheet" href="css/bootstrap-switch.min.css"> -->
@@ -316,45 +316,12 @@
         </footer>
         <!-- Footer Area Ends -->
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap-switch.min.js"></script>
         <script src="js/flat-toggle.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script>
-            (function(){
-                // $("[name='my-checkbox']").bootstrapSwitch();
-               
-
-                $(function(){
-                $("#inc").click(function(){
-                  $("#amountSpan").text( Number($("#amountSpan").text()) + 1 );
-                });
-                $("#dec").click(function(){
-                  $("#amountSpan").text( Number($("#amountSpan").text()) - 1 );
-                });
-              });
-
-
-                 $('.flat-toggle').on('click', function() {
-
-                    $(this).toggleClass('off');
-
-                });
-
-                  $('.flat-toggle').on('click', function() {
-
-                    $('.private').toggle(function(){
-                        $('.private').addClass('public');
-                        $('.public').removeClass('public');
-                    });
-
-                });
-
-
-            })();
-        </script>
     </body>
 </html>
