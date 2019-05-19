@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Our Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- google font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/slicknav.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap-switch.min.css"> -->
+        <link rel="stylesheet" href="css/flat-toggle.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		
+		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <!-- Header Area Starts -->
+        <header class="header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 pull-left">
+                        <div class="logo">
+                            <img src="Assets/kangaroo@2x.png" width="68" height="46" alt="" class="img-responsive logo-img" align="left"> <span class="logo-text">Kangaroo Court</span>
+                        </div> <!-- end logo -->
+                    </div> <!-- end col-md-6 col-sm-6 col-xs-12 pull-left -->
+                    <div class="col-md-6 col-sm-6 col-xs-12 pull-right">
+                        <div class="header-right-area">
+                            <ul class="ul-header">
+                                <li  data-toggle="modal" data-target="#myModal2"><a href="#"><img src="img/admin.png" alt="" class="admin-img"> <span class="admin-name">Tamin</span></a></li>
+                                <li class="case"><a href=""><img src="Assets/my-cases-icon@2x.png" width="24" height="24"  alt="" class="m-case-img"> <span class="m-case">My Cases</span></a></li>
+                            </ul>
+                            <!-- Button trigger modal -->
+                            <button data-toggle="modal" data-target="#myModal"><!-- <img src="img/plus.png" alt=""> <--><img src="Assets/new-complaint-plus@2x.png" width="16" height="16" alt=""> New complaint</button>
+                        </div><!-- end header-right-area -->
+                    </div> <!-- end col-md-6 col-sm-6 pull-right -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </header>
+        <!-- Header Area Ends -->
+
+
+
+        <!-- Section Modal Starts -->
+        <section class="section-modal">
+            <!-- Modal -->
+            <div class="container">
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="Assets/modal-x-icon@2x.png" width="12" height="12" alt=""></span></button>
+                                <p class="modal-title" id="myModalLabel">File complaint</p>
+                              </div>
+                              <div class="modal-body">
+                                <div class="modal-amount-area">
+                                    <p>Amount wagered</p>
+                                    <!-- <div class="dollar">
+                                        <div class="minus">-</div>
+                                        <div class="head">
+                                            <h2>$20</h2>
+                                        </div>
+                                        <div class="plus">+</div>
+                                    </div> --> 
+                                    <div class="dolllar">
+                                        <ul class="dollar-ul">
+                                            <li class="dolar-minus" id="dec"><img src="Assets/wager-minus-icon@2x.png" width="32" height="32" alt=""></li>
+                                            <li class="dolar-amount">$<span id="amountSpan">20</span></li>
+                                            <li class="dolar-plus" id="inc"><img src="Assets/wager-plus-icon@2x.png" width="32" height="32" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- end modal-amount-area -->
+                              </div><!-- end modal-body -->
+                              <div class="modal-text modal-hr">
+                                    <p class="text-top"><span class="text-top-left">Complaint summery</span><span class="text-top-right">242 of 400</span></p>
+                                    <p>I woke up and found Tamin had used my toothbrush. Rather than buy me a new one, he laughed in my face. I am demanding money for a new brush + damages.</p>
+                              </div><!-- end-modal-text -->
+                                
+                              <div class="modal-text">
+                                    <p class="text-top"><span class="text-top-left">Plantiff's Email</span></p>
+                                    <p>someone@someone.com</p>
+                              </div><!-- end modal-text -->
+                              <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                <div class="modal-check">
+                                    <!-- <input type="checkbox" name="my-checkbox" checked> --><!--  <input type="checkbox" id="switch" />
+                                    <label for="switch" class="label"></label> --> 
+
+                                    <div class="flat-toggle">
+                                      <span class="private">Private?</span>
+                                      <span class="private public">Public?</span>
+                                    </div>
+
+                                </div><!-- end modal-check -->
+                                <button class="modal-button">File Complaint</button>
+                              </div><!-- end modal-footer -->
+                            </div><!-- end modal-content -->
+                        </div><!-- end col-md-8 col-md-offset-2 -->
+                    </div><!-- end row -->
+                  </div><!-- end modal-dialog -->
+                </div><!-- end #mymodal -->
+
+
+
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="Assets/modal-x-icon@2x.png" width="12" height="12" alt=""></span></button>
+                                <p class="modal-title" id="myModalLabel1">File complaint</p>
+                              </div><!-- end modal-header -->
+                              <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                <div class="login">
+                                    <a href="#"><i class="fa fa-facebook-square"></i>Log in with Facebook</a>
+                                </div><!-- end login -->
+                              </div><!--  end modal-footer -->
+                            </div><!-- end modal-content -->
+                        </div> <!-- end col-md-8 col-md-offset-2 -->
+                    </div><!-- end row -->
+                  </div> <!-- end modal-dialog -->
+                </div> <!-- end #mymodal2 -->
+            </div><!-- end container -->
+        </section>
+        <!-- Section Modal Ends -->
+
+
+
+
+
+        <!-- Section Navigation starts -->
+        <section class="section-navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-9">
+                        <nav>
+                            <ul class="ul-mainmenu" id="nav">
+                                <li class="active"><a href="#">All</a></li>
+                                <li><a href="#">Love</a></li>
+                                <li><a href="#">Animals</a></li>
+                                <li><a href="#">Kids</a></li>
+                                <li><a href="#">Money</a></li>
+                                <li><a href="#">Work</a></li>
+                                <li><a href="#">Health</a></li>
+                                <li><a href="#">Intimacy</a></li>
+                                <li><a href="#">Miscellaneous</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- end col-md-9 col-sm-9 -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+       <!--  Section Navigation ends -->
+
+
+
+
+       <!--  Section Main Content Starts -->
+        <section class="section-main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-9">
+                        <div class="single-content">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2">
+                                    <img src="img/img-1.png" alt="" class="img-circle img-responsive">
+                                </div><!-- end col-md-2 col-sm-2 -->
+                                <div class="col-md-10 col-sm-10">
+                                    <div class="only-content-text">
+                                        <h2>Roommate broke iPhone and should pay to fix it.</h2>
+                                        <p>Two weeks ago my roommate stepped on my phone while drunk. I think he should pay to fix it...</p>
+                                        <ul class="ul-single">
+                                            <li><a href="#">227 Votes</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">2 hours ago</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">Miscellaneous</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">By Anonymous</a></li>
+                                        </ul>
+                                    </div><!--  end only-content-text -->
+                                </div><!-- end col-md-10 col-sm-10 -->
+                            </div><!-- end row -->
+                        </div><!-- end single-content -->
+
+                        <div class="single-content">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2">
+                                    <img src="img/img-2.png" alt="" class="img-circle img-responsive">
+                                </div><!-- end col-md-2 col-sm-2 -->
+                                <div class="col-md-10 col-sm-10">
+                                    <div class="only-content-text">
+                                        <h2>Tamin used my toothbrush and should have to...</h2>
+                                        <p>Dude uses my toothbrush, it's disgusting. I want him to buy me a new one. It's electric and costs $180!</p>
+                                        <ul class="ul-single">
+                                            <li><a href="#">183 Votes</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">1 day ago</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">Money</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">By CharlieSheen</a></li>
+                                        </ul>
+                                    </div><!--  end only-content-text -->
+                                </div><!-- end col-md-10 col-sm-10 -->
+                            </div><!-- end row -->
+                        </div><!-- end single-content -->
+
+                        <div class="single-content">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2">
+                                    <img src="img/img-3.png" alt="" class="img-circle img-responsive">
+                                </div><!-- end col-md-2 col-sm-2 -->
+                                <div class="col-md-10 col-sm-10">
+                                    <div class="only-content-text">
+                                        <h2>Little brother broke my Xbox One</h2>
+                                        <p>My 12 year old little brother "accidentally" threw my Xbox One out of his tree house. I think he should give me his paper route money...</p>
+                                        <ul class="ul-single">
+                                            <li><a href="#">174 Votes</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">2 days ago</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">Kids</a></li>
+                                            <li>/</li>
+                                            <li class="xtra"><a href="#">By George101</a></li>
+                                        </ul>
+                                    </div><!--  end only-content-text -->
+                                </div><!-- end col-md-10 col-sm-10 -->
+                            </div><!-- end row -->
+                        </div><!-- end single-content -->
+
+                        <div class="single-content">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2">
+                                    <img src="img/img-4.png" alt="" class="img-circle img-responsive">
+                                </div><!-- end col-md-2 col-sm-2 -->
+                                <div class="col-md-10 col-sm-10">
+                                    <div class="only-content-text last-content">
+                                        <h2>Wife says the new glasses make me look...</h2>
+                                        <p>My wife think my new reading glasses make me look like a serial killer. I 100% disagree, and think they make me look distinguished.</p>
+                                        <ul class="ul-single">
+                                            <li><a href="#">126 Votes</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">1 week ago</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">Intimacy</a></li>
+                                            <li>/</li>
+                                            <li class="xtra"><a href="#">By KeithSanderson</a></li>
+                                        </ul>
+                                    </div><!--  end only-content-text last-content -->
+                                </div><!-- end col-md-10 col-sm-10 -->
+                            </div><!-- end row -->
+                        </div><!-- end single-content -->
+                    </div><!-- end col-md-9 col-sm-9 -->
+                    <div class="col-md-3 col-sm-3">
+                        <div class="right-content-area">
+                            <div class="top-right-content">
+                                <h3>What?</h3>
+                                <p>You're right.  Probably.  So prove it.  Kangaroo Court let's you resolve small disputes in a fun way using your friends or the masses to judge who's right and award money to the victor.</p>
+                            </div><!-- end top-right-content -->
+                            <div class="bottom-right-content">
+                                <h3>Why?</h3>
+                                <p>Don't let little things blow up with people that matter.  This is fun, fast resolution.  And be a Kangaroo Judge to help other people police their small disputes.</p>
+                            </div><!-- end bottom-right-content -->
+                        </div><!-- end right-content-area -->
+                    </div><!-- end col-md-3 col-sm-3 -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+        <!-- Section Main Content Ends -->
+
+
+
+
+        <!-- Footer area Starts -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <p>Copyright &copy; Kangaroo Court 2015</p>
+                    </div><!-- end col-md-6 col-sm-6 -->
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="ul-footer">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Follow us on Twitter</a></li>
+                        </ul>
+                    </div><!-- end col-md-6 col-sm-6 -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </footer>
+        <!-- Footer Area Ends -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-switch.min.js"></script>
+        <script src="js/flat-toggle.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            (function(){
+                // $("[name='my-checkbox']").bootstrapSwitch();
+               
+
+                $(function(){
+                $("#inc").click(function(){
+                  $("#amountSpan").text( Number($("#amountSpan").text()) + 1 );
+                });
+                $("#dec").click(function(){
+                  $("#amountSpan").text( Number($("#amountSpan").text()) - 1 );
+                });
+              });
+
+
+                 $('.flat-toggle').on('click', function() {
+
+                    $(this).toggleClass('off');
+
+                });
+
+                  $('.flat-toggle').on('click', function() {
+
+                    $('.private').toggle(function(){
+                        $('.private').addClass('public');
+                        $('.public').removeClass('public');
+                    });
+
+                });
+
+
+            })();
+        </script>
+    </body>
+</html>
